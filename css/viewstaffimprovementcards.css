@@ -1,0 +1,28 @@
+tbody td:nth-child(11),
+tbody td:nth-child(12),
+tbody td:nth-child(13),
+tbody td:nth-child(14),
+tbody td:nth-child(15)
+{
+  background: #e9e9e9;
+}
+
+tbody tr:nth-child(even) td:nth-child(11),
+tbody tr:nth-child(even) td:nth-child(12),
+tbody tr:nth-child(even) td:nth-child(13),
+tbody tr:nth-child(even) td:nth-child(14),
+tbody tr:nth-child(even) td:nth-child(15)
+{
+  background: #c7c7c7;
+}
+
+.lightbox h2 {
+  border-bottom: 1px solid rgb(209, 209, 209);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+}
+
+#box {
+  max-width: 500px;
+}

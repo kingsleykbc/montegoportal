@@ -1,0 +1,83 @@
+.menu svg {
+  width: 80px;
+  margin-bottom: 20px;
+  fill: #ff8d22;
+  transition: color 0.3s linear;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.menu a {
+  display: inline-block;
+  flex-basis: 300px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 10px;
+  width: 32%;
+  height: 200px;
+  border-bottom: 4px solid #000;
+  transition: all linear 0.3s;
+  transition-property: background, transform;
+}
+
+.menu a:hover {
+  transform: scale(1.05);
+  background: #ff912b;
+  color: #fff;
+}
+
+.menu a:hover svg {
+  fill: #fff;
+}
+
+.menu h3 {
+  font-weight: normal;
+}
+
+a.poolCar {
+  background: #5a5a5a;
+  border-bottom-color: #000;
+}
+
+.menu h3 {
+  background: rgba(0, 0, 0, 0.151);
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.poolCar h3{
+  background: #000;
+  color: #fff;
+}
+
+.blackOption {
+  background: transparent !important;
+  border: 3px solid rgb(211, 211, 211) !important;
+  box-shadow: none !important;
+}
+
+
+@media screen and (max-width: 800px){
+   .menu{
+     overflow: hidden;
+   }
+}

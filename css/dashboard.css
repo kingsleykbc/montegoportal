@@ -1,0 +1,205 @@
+.secondHeader {
+  background: #363636;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  height: 61px;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.fileUpload {
+  background: #000000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.fileUpload span {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.filter {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background: #dddddd;
+  position: sticky;
+  top: 58px;
+}
+
+.filterMenu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filterField {
+  padding: 12px;
+  flex-grow: 1;
+}
+
+.filterField:first-child {
+  padding-left: 0;
+}
+
+.filterField p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.filterField input, .filterField select {
+  padding: 8px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: none;
+  width: 100%;
+}
+
+.filterHides {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.filterHides label {
+  padding: 9px 15px;
+  color: #414141;
+  border: 2px solid #6d6d6d;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-right: 22px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filterHides label input {
+  margin-right: 10px;
+}
+
+input[type="reset"] {
+  color: #ff8d22;
+  background: #fff;
+  margin-left: 10px;
+}
+
+.sectionContent {
+  background: none;
+  box-shadow: none;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.filter .sectionContent {
+  padding: 25px 10px;
+}
+
+#filterButton {
+  background: #ffffff;
+  color: #ff8d22;
+  text-align: center;
+  transition: all linear 0.3s;
+  padding: 20px;
+}
+
+#filterButton:hover {
+  cursor: pointer;
+  background: #000;
+}
+
+.result {
+  padding: 25px;
+  padding-bottom: 100px;
+}
+
+.resultTable {
+  margin-top: 20px;
+  overflow: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.resultTable table {
+  white-space: nowrap;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  min-width: 100%;
+}
+
+td {
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+}
+
+thead td {
+  border-color: #414141;
+  background: #414141;
+  font-weight: bold;
+  color: #fff;
+}
+
+tr:nth-child(even) td {
+  background: #e9e9e9;
+}
+
+.resultButton {
+  margin-top: 20px;
+}
+
+.editCV {
+  display: inline-block;
+  fill: #ff8d22;
+  vertical-align: middle;
+  font-weight: bold;
+  margin-left: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.editCV:hover {
+  fill: #000;
+}
+
+.lightbox select {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#staffID {
+  display: none;
+}
+
+#search {
+  background: transparent url('../images/icon_search.svg') calc(100% - 15px) 50% no-repeat;
+  background-size: 20px;
+}
+
+.cvDownloadbutton {
+  background: #ff8d22;
+  border-radius: 5px;
+  display: inline-flex;
+  padding: 8px 10px;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cvDownloadbutton span:first-child {
+  margin-right: 10px;
+}
+
+.cvDownloadbutton svg {
+  width: 20px;
+  fill: #414141;
+  vertical-align: middle;
+}

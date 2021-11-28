@@ -1,0 +1,44 @@
+optgroup {
+  font-size: 0.8em;
+}
+
+#box h2{
+  padding-bottom: 15px;
+}
+
+#addAsset #box {
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  height: 80%;
+  overflow: auto;
+}
+
+#addAsset form {
+  flex-grow: 1;
+  overflow: auto;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+#addAsset .fields {
+  overflow: auto;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#box .aCenter{
+  padding-top: 10px;
+}
+
+
+#macAddressField {
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  #addAsset #box {  top: 10px; }
+}

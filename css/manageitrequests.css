@@ -1,0 +1,11 @@
+.responseForm textarea {
+  width: 100%;
+}
+
+.responseForm .formField {
+  margin-bottom: 5px;
+}
+
+.responseForm {
+  margin-top: 0;
+}

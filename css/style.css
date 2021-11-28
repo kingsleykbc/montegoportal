@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 100%;
+}
+input[type="text"], textarea, button, input[type="submit"] {
+  appearance: none;
+
+}
+svg{
+  max-width: 50px !important;
+}
+
+label {
+  cursor: pointer;
+}
+
+/*=============================================
+  HEADER
+==============================================*/
+.header {
+  display: flex;
+  align-items: center;
+  /* background: url('../images/header.png') 0 0 no-repeat; */
+  background-size: cover;
+  /* color: #fff; */
+  font-weight: bold;
+  padding: 10px 20px;
+  z-index: 10;
+  background: #fff;
+  position: sticky;
+  top:0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important;
+}
+
+.header a:hover{
+  text-decoration: underline;
+}
+
+.header .user{
+  background: #cecece;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+
+.titleRibbon {
+  padding: 20px;
+  font-size: 1.1em;
+  background: #cecece;
+  color: #000;
+}
+.titleRibbon a {
+  color: #000;
+}
+
+.logoSection {
+  flex-grow: 1;
+}
+
+.logoSection a {
+  /* color: #fff; */
+  color: #000;
+}
+
+.header .button {
+  background: #ff8d22;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+}
+
+.header .accountSection {
+  display: flex;
+  align-items: center;
+}
+
+.header .homeIcon{
+  display: none !important;
+  fill:#000 !important;
+  color: #000 !important;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.LOGO {
+  display:flex;
+  align-items:center;
+}
+.LOGO img {
+  width: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+/*=============================================
+  BUTTON
+==============================================*/
+
+button, .button, input[type="reset"] {
+  max-width: 200px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  background: #ff8d22;
+  padding: 10px 22px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background linear 0.3s;
+}
+
+.button.red{
+  background: #ff1f3d;
+}
+.button.green {
+  background: #2edb8d;
+}
+
+.button.max {
+  max-width: 100%;
+}
+
+button:hover, .button:hover, input[type="reset"]:hover, .header .accountSection a:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+.sectionContent{
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+.sectionContent.blank {
+  margin: 20px auto;
+  background: none;
+  box-shadow: none;
+}
+
+/*=============================================
+  WHITEBOARD
+==============================================*/
+
+.whiteBoard{
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  border-radius: 5px;
+  padding: 12px;
+}
+
+
+/*=============================================
+  FOOTER
+==============================================*/
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 25px 0;
+  color: #6b6b6b;
+}
+
+/*=============================================
+  STATUS RIBBON  
+==============================================*/
+
+#statusRibbon div{
+  padding: 17px;
+  padding-top: 20px;
+  background: #10df89;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  left: 0;
+  right: 0;
+  position: fixed;
+  cursor: pointer;
+  top: 57px;
+  transition: all linear 0.3s;
+}
+
+#statusRibbon .error {
+  background:rgb(255, 50, 68) !important;
+}
+
+.flex {
+  display:flex;
+  align-items:center;
+}
+
+hr {
+  border: 1px solid #d8d8d8 !important;
+  margin: 5px 0;
+}
+
+hr.med {
+  margin: 10px 0;
+}
+
+.lightText {
+  color: #6e6e6e;
+}
+.smallText {
+  font-size: 0.9rem;
+}
+
+
+/*=============================================
+  LIGHTBOX SETUP 
+==============================================*/
+
+.lightbox {
+  display: none;
+}
+
+.lightbox, .lightbox .back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.lightbox .back {
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#box {
+  position: fixed;
+  background: #fff;
+  left: 0;
+  right: 0;
+  width: 90%;
+  top: 7%;
+  max-width: 800px;
+  margin: 2% auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(53, 32, 131, 0.4);
+  overflow: auto;
+  z-index: 51;
+  transition: all linear 0.4s;
+  padding: 15px 20px;
+}
+
+#box input, 
+#box textarea, 
+#box select, 
+textarea.form,
+.mainFormField input, 
+.mainFormField textarea, 
+.mainFormField select, 
+.mainFormField textarea 
+{
+  display: inline-block;
+  width: 100%;
+  border: 2px solid #d8d8d8;
+  padding: 8px;
+  font-size: 100%;
+  border-radius: 5px;
+}
+
+input[type="checkbox"],
+.mainFormField input[type="checkbox"]
+{
+  width: auto !important;
+}
+
+#box form p,
+.mainFormField form p
+{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#box textarea,
+.mainFormField textarea
+{
+  resize: none;
+  height: 80px;
+}
+
+#box label {
+  flex-grow: 1;
+}
+
+#box label:nth-child(2) {
+  margin: 0 10px;
+}
+
+.boxTitle {
+  font-size: 1.2rem;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ececec;
+}
+
+
+#box h3 {
+  margin-bottom: 10px;
+}
+
+#box input[type="button"] {
+  background: #ff7a4b;
+  border-color: #ff7a4b;
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* BOTTOM OPTIONS */
+.bottomOptions {
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  padding: 10px 20px;
+  right: 0;
+}
+
+.bottomOptions h3 {
+  flex-grow: 1;
+}
+
+.aLeft{ text-align: left;}
+
+.aCenter{ text-align: center;}
+
+.aRight{ text-align: right;}
+
+
+/* FORM FIELD */
+.mainFormField {
+  display: block;
+}
+.formField, .mainFormField {
+  margin-bottom: 20px;
+}
+
+.formField h3, .mainFormField h3{
+  margin-bottom: 8px !important;
+  font-size: 0.95em;
+}
+
+.formField input, 
+.formField select,
+.mainFormField input, 
+.mainFormField select
+{
+  margin: 0 !important;
+}
+
+.dontShow {display: none !important;}
+
+.noData {
+  color: #808080;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+  font-size: 1.1em;
+}
+
+.noData.paged {
+  font-size: 1.2rem;
+  background: #fff;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.highlightedText {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background:#ececec;
+  display: inline-block;
+  word-break: break-all;
+  font-weight: bold;
+}
+
+.highlightedText.small {
+  font-size: 0.9rem !important;
+  padding: 5px 10px;
+}
+
+.highlightedText.grey {
+  color: #6d6d6d;
+}
+
+/*=============================================
+  ARE YOU SURE LB
+==============================================*/
+
+#areYouSureBox #box{
+  max-width: 400px !important;
+  text-align: center;
+}
+
+#areYouSureBox h2{
+  font-size: 1.2em;
+}
+#areYouSureBox #areYouSureMessage{
+  margin-top: 12px;
+  margin-bottom: 15px;
+  color: #5e5e5e;
+  
+}
+
+#areYouSureBox .areYouSureOptions{
+  display:flex;
+  align-items:center;
+}
+
+#areYouSureBox .areYouSureOption{
+  flex-grow: 1;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid #dddddd;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+#areYouSureBox .areYouSureOption:hover{
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+#areYouSureBox .areYouSureOption div{
+  padding: 10px;
+  width: 100%;
+}
+
+
+/*=============================================
+  STATUS MESSAGES
+==============================================*/
+.successMessage {
+  max-width: 600px;
+  text-align: center;
+  padding: 25px;
+  padding-bottom: 35px;
+}
+
+.successMessage h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.successMessage p {
+  color: #808080;
+}
+
+.successMessage.emptyMessage {
+  margin: 10px auto;
+  max-width: 100%;
+  padding: 20px;
+}
+
+/*=============================================
+  MEDIA QUERY
+==============================================*/
+@media screen and (max-width: 800px){
+  #box{
+    padding: 15px !important;
+  }
+
+  .header{
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .responsiveHide {
+    display: none !important;
+  }
+
+  .header .LOGO{
+    display: none;
+  }
+
+  .header .homeIcon {
+    display: block !important;
+  }
+
+  .flex.responsive {
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+

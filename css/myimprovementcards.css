@@ -1,0 +1,15 @@
+tbody td:nth-child(9),
+tbody td:nth-child(10),
+tbody td:nth-child(11),
+tbody td:nth-child(12)
+{
+  background: #e9e9e9;
+}
+
+tbody tr:nth-child(even) td:nth-child(9),
+tbody tr:nth-child(even) td:nth-child(10),
+tbody tr:nth-child(even) td:nth-child(11),
+tbody tr:nth-child(even) td:nth-child(12)
+{
+  background: #c7c7c7;
+}

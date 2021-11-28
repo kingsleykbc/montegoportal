@@ -1,0 +1,101 @@
+a.button {
+  max-width: 100% !important;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+.mySuggestions {
+  padding-top: 20px;
+}
+
+/* MY SUGGESTION */
+.mySuggestion {
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  padding: 15px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.mySuggestion .top{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.mySuggestion .title {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.mySuggestion .category {
+  color: #8a8a8a;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.mySuggestion p {
+  line-height: 27px;
+}
+
+.mySuggestion .response {
+  background: #e7e7e7;
+  border-radius: 5px;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.mySuggestions .response p{
+  margin-top: 10px;
+}
+
+#box h1{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 150px !important;
+}
+
+
+/* VIEW SUGGESTIONS SECTION */
+.postResponse {
+  margin-top: 10px;
+  border-top: 1px solid rgb(185, 185, 185);
+}
+
+.postResponse h3 {
+  margin: 12px 0;
+}
+
+.postResponse textarea {
+  width: 100%;
+  height: 100px !important;
+  padding: 10px;
+  resize: none;
+  border: 1px solid #b9b9b9;
+}
+
+.postResponse .aRight{
+  margin-top: 10px;
+}
+.suggestionPoster{
+  background: #ff8d22;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.hseToggle {
+  display: inline-block;
+  padding: 10px 12px;
+  border: 2px solid #ff8d22;
+  border-radius: 5px;
+}
+

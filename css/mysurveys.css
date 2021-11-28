@@ -1,0 +1,58 @@
+body {
+  background: #f0f0f0;
+}
+
+.sectionContent {
+  max-width: 750px;
+}
+
+/*================================================================
+  MY SURVEY
+=================================================================*/
+.mysurvey {
+  margin-bottom: 10px;
+}
+
+.info {
+  display:flex;
+}
+
+.mysurvey .highlightedText {
+  color: #636363 !important;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+.surveyDetails {
+  flex-grow: 1;
+}
+.icon {
+  fill: #8f8f8f;
+  margin-right: 15px;
+}
+
+.bottomSection {
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #cccccc;
+}
+
+.mysurvey .lightText {
+  margin: 10px 0;
+}
+
+.mysurvey b {
+  margin-right: 5px;
+}
+
+b,span{
+  vertical-align: middle;
+}
+
+.noResponse {
+  margin: 10px 0;
+}

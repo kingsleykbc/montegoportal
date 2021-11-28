@@ -1,0 +1,21 @@
+.whiteboard {
+  max-width: 800px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin: 5% auto;
+  text-align: center;
+  height: 400px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.whiteboard svg {
+  width: 200px;
+  fill: #ff8d22;
+  margin-bottom: 45px;
+}
